@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle2.css">
+<meta charset="utf-8">
+<title>Change the Background Color with JavaScript</title>
+<script>
+    // Function to change webpage background color
+    function changeBodyBg(color){
+        document.body.style.background = color;
+    }
+    
+    // Function to change heading background color
+    function changeHeadingBg(color){
+        document.getElementById("heading").style.background = color;
+    }
+</script>
+</head>
+<body>
+    <h1>Click The Buttons To Change the Background Color with JavaScript!</h1>
+    <div>
+        <label>Change The Background Color To:</label>
+        <button type="button" onclick="changeBodyBg('RED');">RED</button>
+        <button type="button" onclick="changeBodyBg('ORANGE');">ORANGE</button>
+        <button type="button" onclick="changeBodyBg('YELLOW');">YELLOW</button>
+        <button type="button" onclick="changeBodyBg('GREEN');">GREEN</button>
+        <button type="button" onclick="changeBodyBg('BLUE');">BLUE</button>
+        <button type="button" onclick="changeBodyBg('PURPLE');">PURPLE</button>
+    </div>
+    <br>
+
+<a href="index.html"> HOME </a>
+
+</body>
+</html>

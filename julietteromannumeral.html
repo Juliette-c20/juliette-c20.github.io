@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roman Number Converter</title>
+	 <link rel="stylesheet" type="text/css" href="mystyle2.css">
+</head>
+<body>
+<h1>Enter the number you would like to convert to Roman Numerals:</h1>
+<p><input type="text" id="number"></p>
+<p><button onclick="convertRoman(document.getElementById('number').value)">Convert</button></p>
+<p id="romanNumber"></p>
+
+
+<script>
+function convertRoman(number){
+	var romanNumber = "";
+	if (number < 5) {
+		for (var i = number - 1; i >= 0; i--) {
+			romanNumber = romanNumber+="I";
+		} 
+		} else {
+			romanNumber = "Currently, this only works with numbers between 1 and 4."
+
+	}
+	document.getElementById('romanNumber').innerHTML = romanNumber;
+}
+</script>
+
+<br>
+
+<a href="index.html"> HOME </a>
+
+
+</body>
+</html>
